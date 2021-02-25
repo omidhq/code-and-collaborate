@@ -1,21 +1,16 @@
 html,
 html * {
-  cursor: none;
+  
 }
 
 body {
     overflow-x: hidden;
   }
-  
-  a:hover {
-    font-weight: bold;
-  }
-
 
 .movable {
-    width: 40px;
-    height: 40px;
-    background: gold;
+    width: 100px;
+    height: 100px;
+    background: tran;
     position: absolute;
     z-index: 999999999;
     transform: translate(-50%, -50%);
@@ -25,7 +20,8 @@ body {
   }
   
   .movable.active {
-    background: red;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejiAkNxEv2ikT_Pjsf3r2z0f88XntT62hvQ&usqp=CAU);
+    background-size: cover;
   }
   
   .movable.active:after {
