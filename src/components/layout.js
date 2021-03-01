@@ -10,9 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import CursorProvider from "../../static/cursor/cursorProvider"
-import Button from './Button';
-import Slides from './Slides';
 import "./layout.css"
 import "./style.css"
 
@@ -29,11 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <CursorProvider>
-        <Slides />
-        <Button href="#">This is a link</Button>
-      </CursorProvider>
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`}  />
         <div
           style={{
             margin: `0 auto`,
