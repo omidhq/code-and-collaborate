@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Parallax } from 'react-parallax'
+import { Parallax, Background } from 'react-parallax'
 
 import Header from "./header"
 import "./layout.css"
@@ -52,8 +52,8 @@ const image4 =
         <div
           style={{
             margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
+            maxWidth: 1000,
+            padding: `0 0 1.45rem`,
           }}
         >
           <main>{children}</main>
@@ -101,6 +101,15 @@ const image4 =
     </Parallax>
     <h2>| | |</h2>
     <Parallax strength={500}>
+    <Background className="custom-bg">
+        <div
+          style={{
+            height: 2000,
+            width: 2000,
+            backgroundImage: "url('https://i.imgur.com/8CV5WAB.png%27)"
+          }}
+        />
+      </Background>
       <div>
         <br />
         custom background component
