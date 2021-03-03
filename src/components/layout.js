@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Parallax, Background } from "react-parallax"
 
+import Hero from '../components/Hero/Hero'
 import Header from "./header"
 import "./layout.css"
 import "./style.css"
@@ -46,6 +47,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Hero />
       <div
         style={{
           margin: `0 auto`,
