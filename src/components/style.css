@@ -1,5 +1,27 @@
 
+header {
+    background-color: var(--ricola-orange);
+}
 
-header{
-    background-color: #fff;
+.subheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    color: var(--white);
+
+    font-size: 6rem;
+}
+.nature {
+    background-color: var(--ricola-green)
+}
+.people {
+    background-color: var(--ricola-orange);
+}
+
+
+.react-parallax {
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 0 0 1.45rem;
 }
