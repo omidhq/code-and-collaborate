@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './ScrollTopArrow.module.css'
+import './ScrollTopArrow.css'
 
 const ScrollTopArrow = () => {
     const [showScroll, setShowScroll] = useState(false)
