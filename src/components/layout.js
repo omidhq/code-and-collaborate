@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Parallax, Background } from "react-parallax"
 
+import ScrollTopArrow from '../components/ScrollTop/ScrollTopArrow'
 import Hero from '../components/Hero/Hero'
 import Header from "./header"
 import "./layout.css"
@@ -122,6 +123,7 @@ const Layout = ({ children }) => {
             <br />
           </div>
         </Parallax>
+        <ScrollTopArrow />
         <footer
           style={{
             marginTop: `2rem`,
