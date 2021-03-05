@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Parallax, Background } from "react-parallax"
 
-import StaticIntro from './Intro/StaticIntro'
+// import StaticIntro from './Intro/StaticIntro'
 import ScrollTopArrow from "./ScrollTop/ScrollTopArrow"
 import SubHeading from "./SubHeading/SubHeading"
 import Hero from "../components/Hero/Hero"
