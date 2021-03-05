@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Parallax, Background } from "react-parallax"
 
+import StaticIntro from './Intro/StaticIntro'
 import ScrollTopArrow from "./ScrollTop/ScrollTopArrow"
 import SubHeading from "./SubHeading/SubHeading"
 import Hero from "../components/Hero/Hero"
@@ -51,6 +52,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Hero />
+      <StaticIntro />
       <SubHeading className="subheading nature" title="Nature" />
       <Parallax bgImage={image1} strength={500}>
         <div style={{ height: 500 }}>
