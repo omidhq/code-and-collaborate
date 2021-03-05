@@ -3,7 +3,7 @@ import React from 'react'
 const SubHeading = (props) => {
     return (
         <div className={props.className}>
-            <h2>{props.title}</h2>
+            <h2>{props.subHeadingText}</h2>
         </div>
     )
 }

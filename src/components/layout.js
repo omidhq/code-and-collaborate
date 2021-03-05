@@ -52,8 +52,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Hero />
-      <StaticIntro />
-      <SubHeading className="subheading nature" title="Nature" />
+      <SubHeading className="subheading nature" subHeadingText="Nature" />
       <Parallax bgImage={image1} strength={500}>
         <div style={{ height: 500 }}>
           <div style={insideStyles}>HTML inside the parallax</div>
@@ -71,7 +70,7 @@ const Layout = ({ children }) => {
           <div style={insideStyles}>Reverse direction</div>
         </div>
       </Parallax>
-      <SubHeading className="subheading people" title="People" />
+      <SubHeading className="subheading people" subHeadingText="People" />
       <Parallax
         bgImage={image4}
         strength={200}
