@@ -52,6 +52,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Hero />
+      <StaticIntro />
       <SubHeading className="subheading nature" subHeadingText="Nature" />
       <Parallax bgImage={image1} strength={500}>
         <div style={{ height: 500 }}>
