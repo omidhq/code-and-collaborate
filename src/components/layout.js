@@ -7,15 +7,13 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
-import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 
 // import StaticIntro from './Intro/StaticIntro'
-import ScrollTopArrow from "./ScrollTop/ScrollTopArrow"
-import SubHeading from "./SubHeading/SubHeading"
-import Hero from "../components/Hero/Hero"
 import Header from "./header"
+import Hero from "../components/Hero/Hero"
+import Nature from "./Nature/Nature"
+import ScrollTopArrow from "./ScrollTop/ScrollTopArrow"
 
 import "./layout.css"
 import "./style.css"
@@ -35,22 +33,11 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Hero />
-      <ParallaxProvider>
-        <SubHeading className="subheading nature" subHeadingText="Nature" />
-        <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-          <StaticImage src="../images/hands.png" />
-          <h1>Fuck this shit</h1>
-        </Parallax>
-        <h2>| | |</h2>
-        <SubHeading className="subheading people" subHeadingText="People" />
-      </ParallaxProvider>
+      <Nature />
 
       <ScrollTopArrow />
-      <footer
-        style={{
-          marginTop: `2rem`,
-        }}
-      >
+      {children}
+      <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
@@ -61,6 +48,9 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
+Header.defaultProps = {
+  siteTitle: ``,
 }
 
 export default Layout
