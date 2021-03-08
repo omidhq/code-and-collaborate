@@ -18,10 +18,3 @@ header {
 .people {
     background-color: var(--ricola-orange);
 }
-
-
-.react-parallax {
-    margin: 0 auto;
-    max-width: 100rem;
-    padding: 0 0 1.45rem;
-}
