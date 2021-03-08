@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { ParallaxProvider } from "react-scroll-parallax"
 
 // import StaticIntro from './Intro/StaticIntro'
 import Header from "./header"
@@ -31,17 +32,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Hero />
-      <Nature />
+      <ParallaxProvider>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <Hero />
+        <Nature />
 
-      <ScrollTopArrow />
-      {children}
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+        <ScrollTopArrow />
+        {children}
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        </footer>
+      </ParallaxProvider>
     </>
   )
 }
