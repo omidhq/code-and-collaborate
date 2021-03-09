@@ -11,10 +11,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import { ParallaxProvider } from "react-scroll-parallax"
 
 // import StaticIntro from './Intro/StaticIntro'
-import Header from "./header"
-import Hero from "../components/Hero/Hero"
-import Nature from "./Nature/Nature"
+
+import RicolaVideo from "../images/ricola-video.mp4"
+
+import StaticIntro from "./Intro/StaticIntro"
 import ScrollTopArrow from "./ScrollTop/ScrollTopArrow"
+import Header from "./header"
+import Hero from "./Hero/Hero"
+import Nature from "./Nature/Nature"
 
 import "./layout.css"
 import "./style.css"
@@ -34,12 +38,16 @@ const Layout = ({ children }) => {
     <>
       <ParallaxProvider>
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <Hero />
-        <Nature />
+        <Hero src={RicolaVideo} />
 
+        <StaticIntro />
+        <Nature />
         <ScrollTopArrow />
-        {children}
-        <footer>
+        <footer
+          style={{
+            marginTop: `2rem`,
+          }}
+        >
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>

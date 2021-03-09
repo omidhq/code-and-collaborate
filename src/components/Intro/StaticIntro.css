@@ -1,10 +1,34 @@
-.wrapper {
+.introWrapper {
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 4rem;
-    margin: 5rem;
+    margin: 0 5rem 5rem;
+}
+.categoryContainer {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10rem;
+    max-width: 1000px;
+}
+
+.category {
+    max-width: 250px;
+}
+
+.categoryImg {
+    max-width: 300px;
+}
+
+.categoryTitle {
+    margin: 2rem 0;
+}
+
+.categoryText {
+    margin: 2rem 0;
 }
 
 .staticIntroTitle {
@@ -14,4 +38,25 @@
 p {
     line-height: 140%;
     margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .categoryContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .gatsby-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .introWrapper {
+        padding: 0;
+        margin: 2rem;
+    }
 }
