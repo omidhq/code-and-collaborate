@@ -3,7 +3,10 @@ import React from 'react'
 const SubHeading = (props) => {
     return (
         <div className={props.className}>
-            <h2>{props.subHeadingText}</h2>
+            <h2 style={{
+                fontFamily: 'El Messiri',
+                fontSize: '8rem' 
+            }}>{props.subHeadingText}</h2>
         </div>
     )
 }

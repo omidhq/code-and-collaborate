@@ -15,6 +15,10 @@
     max-width: 1000px;
 }
 
+.category {
+    max-width: 250px;
+}
+
 .categoryImg {
     max-width: 300px;
 }
@@ -40,6 +44,13 @@ p {
     .categoryContainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .gatsby-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        max-width: 250px;
+        margin: 0 auto;
     }
 }
 

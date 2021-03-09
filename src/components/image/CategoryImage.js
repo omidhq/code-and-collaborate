@@ -13,9 +13,9 @@ const CategoryImage = (props) => (
                 relativePath
                 name
                 childImageSharp {
-                    fluid(maxWidth: 250) {
-                        ...GatsbyImageSharpFluid
-                    }
+                  fluid {
+                      ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }
