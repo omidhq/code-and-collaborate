@@ -1,14 +1,17 @@
-import React from 'react'
+import React from "react"
+import { Parallax } from "react-scroll-parallax"
 
-const SubHeading = (props) => {
-    return (
-        <div className={props.className}>
-            <h2 style={{
+const SubHeading = props => {
+  return (
+    <div className={props.className}>
+      <Parallax x={[-50, 80]} tagOuter="figure">
+      <h2 style={{
                 fontFamily: 'El Messiri',
                 fontSize: '8rem' 
             }}>{props.subHeadingText}</h2>
-        </div>
-    )
+      </Parallax>
+    </div>
+  )
 }
 
 export default SubHeading
