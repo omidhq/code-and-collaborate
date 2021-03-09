@@ -1,0 +1,22 @@
+.outroWrapper {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.outroHeading {
+    font-weight: var(--wght-extra-bold);
+    font-size: 5rem;
+}
+
+.textWrapper {
+    max-width: 650px;
+    margin: 1rem 0 7rem;
+}
+
+.outroImage {
+    margin-bottom: 5rem;
+}

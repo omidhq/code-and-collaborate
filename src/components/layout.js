@@ -19,6 +19,7 @@ import ScrollTopArrow from "./ScrollTop/ScrollTopArrow"
 import Header from "./header"
 import Hero from "./Hero/Hero"
 import Nature from "./Nature/Nature"
+import Outro from './Outro/Outro'
 
 import "./layout.css"
 import "./style.css"
@@ -43,6 +44,7 @@ const Layout = ({ children }) => {
         <StaticIntro />
         <Nature />
         <ScrollTopArrow />
+        <Outro />
         <footer
           style={{
             marginTop: `2rem`,
