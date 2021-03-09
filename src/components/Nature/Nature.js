@@ -9,22 +9,11 @@ export default function Nature() {
     <>
       <SubHeading className="subheading nature" subHeadingText="Nature" />
       <div className="wrapper">
-        <Parallax
-          offsetYMax={150}
-          offsetYMin={-50}
-          offsetXMax={-40}
-          offsetXMin={20}
-          className="hands"
-        >
-          <StaticImage src="../../images/nature/hands.png" />
-        </Parallax>
-        <Parallax
-          offsetYMax={150}
-          offsetYMin={-50}
-          offsetXMax={40}
-          offsetXMin={-20}
-        >
+        <Parallax y={[-50, 80]} className="leaves">
           <StaticImage src="../../images/nature/leaves.png" />
+        </Parallax>
+        <Parallax x={[-50, 80]} className="hands">
+          <StaticImage src="../../images/nature/hands.png" />
         </Parallax>
 
         <h2>| | |</h2>
