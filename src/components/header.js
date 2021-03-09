@@ -7,7 +7,6 @@ const Header = () => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 1000,
         padding: `1.45rem 0`,
       }}
     >
