@@ -3,9 +3,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Parallax } from "react-scroll-parallax"
 
 import SubHeading from "../SubHeading/SubHeading"
-import data from "../../data/data.json"
+import data from "../../data/nature.json"
 
-const Nature = data.map(data => {
+const Nature = () => {
   return (
     <>
       <SubHeading className="subheading nature" subHeadingText="Nature" />
@@ -24,6 +24,6 @@ const Nature = data.map(data => {
       </div>
     </>
   )
-})
+}
 
 export default Nature
