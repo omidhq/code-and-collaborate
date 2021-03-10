@@ -6,12 +6,6 @@ import { WasteData } from "../../data/nature_data"
 export default function Waste() {
   return (
     <>
-      <div className="right-col">
-        <StaticImage
-          src="../../images/nature/cow.png"
-          alt="An illustration of a cow with a bubble that says Beyond Zero"
-        />
-      </div>
       <div className="left-col">
         <h3>{WasteData.title}</h3>
         <p>{WasteData.introPara1}</p>
@@ -19,6 +13,12 @@ export default function Waste() {
         <p>{WasteData.introPara3}</p>
         <p>{WasteData.introPara4}</p>
         <p>{WasteData.introPara5}</p>
+      </div>
+      <div className="right-col">
+        <StaticImage
+          src="../../images/nature/cow.png"
+          alt="An illustration of a cow with a bubble that says Beyond Zero"
+        />
       </div>
 
       <div>
