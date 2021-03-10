@@ -1,6 +1,6 @@
 import React from "react"
 
-import SubHeading from "../SubHeading/SubHeading"
+import Heading from "../Heading/Heading"
 import Biodiversity from "./Biodiversity"
 import EnergyAndEmission from "./EnergyAndEmission"
 import Water from "./Water"
@@ -9,13 +9,11 @@ import Waste from "./Waste"
 const Nature = () => {
   return (
     <>
-      <SubHeading className="subheading nature" subHeadingText="Nature" />
-      <div className="component-wrapper">
-        <Biodiversity />
-        <EnergyAndEmission />
-        <Water />
-        <Waste />
-      </div>
+      <Heading className="heading nature" />
+      <Biodiversity />
+      <EnergyAndEmission />
+      <Water />
+      <Waste />
     </>
   )
 }

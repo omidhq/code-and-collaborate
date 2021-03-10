@@ -5,7 +5,7 @@ import { WasteData } from "../../data/nature_data"
 
 export default function Waste() {
   return (
-    <>
+    <div className="content-wrapper">
       <div className="left-col">
         <h3>{WasteData.title}</h3>
         <p>{WasteData.introPara1}</p>
@@ -31,6 +31,6 @@ export default function Waste() {
         <p>{WasteData.footstep3}</p>
         <p>{WasteData.footstep4}</p>
       </div>
-    </>
+    </div>
   )
 }

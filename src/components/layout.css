@@ -1,34 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap");
 @font-face {
-  font-family: 'Frutiger';
-  src: local('Frutiger'), url(../fonts/Frutiger.ttf) format('truetype');
+  font-family: "Frutiger";
+  src: local("Frutiger"), url(../fonts/Frutiger.ttf) format("truetype");
 }
 
-
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-:root{
-  --font-subheading: 'El Messiri', serif;
-  --font-heading: 'Montserrat', serif;
-  --font-body: 'Frutiger', monospace;
+:root {
+  --font-heading: "El Messiri", serif;
+  --font-subheading: "Montserrat", serif;
+  --font-body: "Frutiger", monospace;
 
   --wght-regular: 300;
   --wght-medium: 500;
   --wght-bold: 700;
   --wght-extra-bold: 900;
 
-
   --ricola-green: #005747;
-  --ricola-red: #E90000;
-  --ricola-orange: #FFCE00;
-  --ricola-yellow: #EAED3D;
+  --ricola-red: #e90000;
+  --ricola-orange: #ffce00;
+  --ricola-yellow: #eaed3d;
   --ricola-purple: #930088;
-  
+
   --white: #ffffff;
   --black: #000000;
 }
@@ -48,20 +46,33 @@ body {
   font-weight: var(--wght-regular);
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: var(--font-heading);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 1.4rem;
   text-rendering: optimizeLegibility;
 }
 
-h1{
+h1 {
+  font-family: var(--font-subheading);
   font-size: 4.5rem;
   font-weight: var(--wght-extra-bold);
 }
 
-h2{
+h2 {
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: var(--wght-bold);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-subheading);
 }
 
 a:active,

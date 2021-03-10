@@ -5,7 +5,7 @@ import { WaterData } from "../../data/nature_data"
 
 export default function EnergyAndEmission() {
   return (
-    <>
+    <div className="content-wrapper">
       <div className="left-col">
         <StaticImage
           src="../../images/nature/water.png"
@@ -25,6 +25,6 @@ export default function EnergyAndEmission() {
         <h4>{WaterData.subHeading2}</h4>
         <p>{WaterData.footstep1}</p>
       </div>
-    </>
+    </div>
   )
 }

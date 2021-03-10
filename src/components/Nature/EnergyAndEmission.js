@@ -5,7 +5,7 @@ import { EnergyData } from "../../data/nature_data"
 
 export default function EnergyAndEmission() {
   return (
-    <>
+    <div className="content-wrapper">
       <div className="left-col">
         <h3>{EnergyData.title}</h3>
         <p>{EnergyData.introPara1}</p>
@@ -26,6 +26,6 @@ export default function EnergyAndEmission() {
         <h4>{EnergyData.subHeading2}</h4>
         <p>{EnergyData.footstep1}</p>
       </div>
-    </>
+    </div>
   )
 }

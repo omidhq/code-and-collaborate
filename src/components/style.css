@@ -2,14 +2,17 @@ header {
   background-color: var(--white);
 }
 
-.subheading {
+.heading {
   display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
   color: var(--white);
-
-  font-size: 6rem;
+  padding: 5rem 0;
+  margin: 1rem 0 10rem;
+  position: relative;
+  z-index: 3;
 }
 .nature {
   background-color: var(--ricola-green);
@@ -17,13 +20,50 @@ header {
 .people {
   background-color: var(--ricola-orange);
 }
+.heading h2 {
+  font-family: var(--font-heading);
+  font-size: 9rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
 
-.component-wrapper {
+.heading span {
+  margin: 0.2em 0;
+  text-align: center;
+}
+.letters {
+  display: inline-block;
+  font-size: 9rem;
+}
+
+.content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
   margin: 0 auto;
   position: relative;
+}
+.content-wrapper h3 {
+  font-size: 6rem;
+  font-weight: var(--wght-extra-bold);
+}
+.content-wrapper p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.content-wrapper .biodiversity {
+  position: relative;
+}
+.biodiversity .leaves {
+  position: absolute;
+  z-index: 2;
+}
+.biodiversity .holding-hands {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .left-col {

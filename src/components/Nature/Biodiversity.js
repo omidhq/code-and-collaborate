@@ -6,12 +6,14 @@ import { BiodiversityData } from "../../data/nature_data"
 
 export default function Biodiversity() {
   return (
-    <>
-      <div className="left-col">
-        <Parallax y={[0, 20]} className="leaves">
+    <div className="content-wrapper">
+      <div className="left-col biodiversity">
+        <Parallax y={[-40, 0]} x={[10, 10]} className="leaves">
           <StaticImage src="../../images/nature/leaves.png" />
         </Parallax>
-        <StaticImage src="../../images/nature/hands.png" />
+        <Parallax x={[-30, 15]} className="holding-hands">
+          <StaticImage src="../../images/nature/hands.png" />
+        </Parallax>
       </div>
 
       <div className="right-col">
@@ -36,6 +38,6 @@ export default function Biodiversity() {
         <h4>{BiodiversityData.subHeading3}</h4>
       </div>
       <div></div>
-    </>
+    </div>
   )
 }
