@@ -18,8 +18,18 @@ header {
   background-color: var(--ricola-orange);
 }
 
-.wrapper {
+.component-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
   margin: 0 auto;
   position: relative;
+}
+
+.left-col {
+  border: 1px red solid;
+}
+
+.right-col {
+  border: 1px blue solid;
 }
