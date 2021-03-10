@@ -3,11 +3,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Parallax } from "react-scroll-parallax"
 
 import SubHeading from "../SubHeading/SubHeading"
-import natureData from "./nature_data.json"
+import content from "./nature_data.json"
 
 const Nature = () => {
-  const content = JSON.parse(JSON.stringify(natureData))
-  console.log(content)
   return (
     <>
       <SubHeading className="subheading nature" subHeadingText="Nature" />
