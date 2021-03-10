@@ -11,7 +11,7 @@ const Nature = () => {
       <SubHeading className="subheading nature" subHeadingText="Nature" />
       <div className="component-wrapper">
         <div className="left-col">
-          <Parallax y={[-50, 80]} className="leaves">
+          <Parallax y={[-20, 20]} className="leaves">
             <StaticImage src="../../images/nature/leaves.png" />
             <StaticImage src="../../images/nature/hands.png" />
           </Parallax>
