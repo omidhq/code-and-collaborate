@@ -21,7 +21,10 @@ const Nature = () => {
 
         <div className="right-col">
           <h3>{content[0].heading}</h3>
-          <p></p>
+          <p>{content[0].para1}</p>
+          <p>{content[0].para2}</p>
+          <p>{content[0].para3}</p>
+          <p>{content[0].para4}</p>
         </div>
       </div>
     </>
