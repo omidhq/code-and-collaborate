@@ -71,7 +71,12 @@ header {
   background: url("../images/nature/footsteps.png") no-repeat left center;
 }
 
-.right.footsteps,
+.right.footsteps {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
 .right.footsteps p {
   text-align: right;
   justify-content: end;
