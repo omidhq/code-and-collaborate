@@ -1,5 +1,6 @@
 header {
   background-color: var(--white);
+  padding: 1rem 2rem;
 }
 
 .heading {
@@ -108,7 +109,7 @@ header {
   z-index: 1;
 }
 .herb-farms {
-  text-align: center;
+  text-align: right;
 }
 .biodiversity .sdg h4 {
   margin-top: 2rem;
@@ -139,6 +140,13 @@ header {
 .hose > div {
   position: absolute;
   left: -10rem;
+}
+.water .sdg {
+  text-align: right;
+}
+.water .sdg > div {
+  margin-left: 1.2rem;
+  margin-right: 0;
 }
 
 /* --------------------Waste */
