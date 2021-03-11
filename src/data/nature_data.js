@@ -45,6 +45,7 @@ export const WaterData = {
 
 export const WasteData = {
   title: "WASTE",
+  beyondZero: "Beyond Zero!",
   introPara1:
     "We are constantly optimising our distribution, logistics and the reduction of waste.",
   introPara2:
@@ -61,4 +62,25 @@ export const WasteData = {
   footstep2: "Conduct Input/Output Analysis in Distrubution And Logistics",
   footstep3: "Towards Fully Recycable, Compastable or Biogradable",
   footstep4: "100% FSC Certification For The Böxli",
+}
+
+export const AlternativeText = {
+  SwissMap: "A green map of Switzerland with the locations of herb farms",
+  sdg6: "United Nations' SDG 6: Clean water and Sanitation",
+  sdg7: "United Nations' SDG 7: Affordable and clean energy",
+  sdg8: "United Nations' SDG 8: Decent work and economic growth",
+  sdg9:
+    "United Nations' SDG 9: Goal 9: Industry, Innovation, and Infrastructure",
+  sdg10: "United Nations' SDG 10: Reduced inequalities",
+  sdg12: "United Nations' SDG 12: Responsible Consumption and Production",
+  sdg13: "United Nations' SDG 13: Climate action",
+  sdg15: "United Nations' SDG 15: Life on land",
+  sdg17: "United Nations' SDG 17: Partnership for the goals",
+  windmill: "Illustration of three yellow windmills",
+  cow: "An illustration of a cow with a bubble that says Beyond Zero",
+}
+
+export const fixedVar = {
+  sdgWidth: 95,
+  sdgHeight: 95,
 }

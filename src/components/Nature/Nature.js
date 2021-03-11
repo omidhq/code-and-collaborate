@@ -2,7 +2,7 @@ import React from "react"
 
 import Heading from "../Heading/Heading"
 import Biodiversity from "./Biodiversity"
-import EnergyAndEmission from "./EnergyAndEmission"
+import EnergyEmission from "./EnergyEmission"
 import Water from "./Water"
 import Waste from "./Waste"
 
@@ -11,7 +11,7 @@ const Nature = () => {
     <>
       <Heading className="heading nature" />
       <Biodiversity />
-      <EnergyAndEmission />
+      <EnergyEmission />
       <Water />
       <Waste />
     </>

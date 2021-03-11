@@ -42,17 +42,54 @@ header {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  margin-top: 2rem;
 }
 .content-wrapper h3 {
   font-size: 6rem;
   font-weight: var(--wght-extra-bold);
+  margin-bottom: 4rem;
 }
 .content-wrapper p {
   font-size: 1.7rem;
   line-height: 1.5;
 }
+.content-wrapper h4 {
+  font-size: 3rem;
+  font-weight: var(--wght-bold);
+  margin-top: 9rem;
+}
+.footsteps p {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+.left.footsteps p:before {
+  content: "";
+  display: inline-block;
+  width: 7.5rem;
+  height: 7.5rem;
+  background: url("../images/nature/footsteps.png") no-repeat left center;
+}
 
-.content-wrapper .biodiversity {
+.right.footsteps,
+.right.footsteps p {
+  text-align: right;
+  justify-content: end;
+}
+.right.footsteps p:after {
+  content: "";
+  display: inline-block;
+  width: 7.5rem;
+  height: 7.5rem;
+  background: url("../images/nature/footsteps.png") no-repeat left center;
+}
+
+.sdg > div {
+  margin-right: 1.2rem;
+}
+
+/* --------------------Biodiversity */
+.content-wrapper .images {
   position: relative;
 }
 .biodiversity .leaves {
@@ -65,11 +102,66 @@ header {
   left: 0;
   z-index: 1;
 }
-
-.left-col {
-  border: 1px red solid;
+.herb-farms {
+  text-align: center;
+}
+.biodiversity .sdg h4 {
+  margin-top: 2rem;
 }
 
-.right-col {
-  border: 1px blue solid;
+/* --------------------Energy and Emission */
+.energy-emission .intro h3 {
+  padding-top: 8rem;
+}
+.windmills {
+  position: relative;
+}
+.windmills > div {
+  position: absolute;
+  top: -5rem;
+}
+
+/* --------------------Water */
+.water {
+  margin-top: 9rem;
+}
+.water .intro h3 {
+  padding-top: 6rem;
+}
+.hose {
+  position: relative;
+}
+.hose > div {
+  position: absolute;
+  left: -10rem;
+}
+
+/* --------------------Waste */
+.waste {
+  margin: 10rem auto 12rem;
+}
+.waste .intro h3 {
+  padding-top: 18rem;
+}
+
+.cow-illustration {
+  position: relative;
+}
+.cow-illustration > div,
+.cow-illustration h4 {
+  position: absolute;
+}
+.cow-illustration h4 {
+  z-index: 1;
+  color: var(--white);
+  font-family: var(--font-heading);
+  width: 12rem;
+  font-size: 3.6rem;
+  line-height: 1.2;
+  text-align: center;
+  left: 8rem;
+  top: -2.6rem;
+}
+.waste .sdg > div {
+  margin-bottom: 0.6rem;
 }
