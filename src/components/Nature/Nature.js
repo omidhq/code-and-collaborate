@@ -9,7 +9,7 @@ import Waste from "./Waste"
 const Nature = () => {
   return (
     <>
-      <Heading className="heading nature" />
+      <Heading className="heading nature" heading="Nature" />
       <Biodiversity />
       <EnergyEmission />
       <Water />
