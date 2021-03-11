@@ -165,3 +165,16 @@ header {
 .waste .sdg > div {
   margin-bottom: 0.6rem;
 }
+
+/* ----------------------- Footer */
+footer {
+  border-top: 4px solid var(--ricola-green);
+  display: flex;
+  justify-content: center;
+  background-color: var(--ricola-orange);
+  color: var(--black);
+  padding: 5rem;
+}
+footer a {
+  color: var(--ricola-green);
+}

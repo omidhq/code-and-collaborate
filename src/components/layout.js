@@ -20,6 +20,7 @@ import Header from "./header"
 import Hero from "./Hero/Hero"
 import Nature from "./Nature/Nature"
 import Outro from "./Outro/Outro"
+import Footer from "./Footer/Footer"
 
 import "./layout.css"
 import "./style.css"
@@ -43,18 +44,10 @@ const Layout = ({ children }) => {
 
         <StaticIntro />
         <Nature />
-        <ScrollTopArrow />
         <Outro />
         {children}
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        <Footer />
+        <ScrollTopArrow />
       </ParallaxProvider>
     </>
   )

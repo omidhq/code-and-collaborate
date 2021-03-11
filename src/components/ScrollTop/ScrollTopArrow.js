@@ -1,33 +1,37 @@
-import React, {useState, useEffect} from 'react'
-import './ScrollTopArrow.css'
+import React, { useState, useEffect } from "react"
+import "./ScrollTopArrow.css"
 
 const ScrollTopArrow = () => {
-    const [showScroll, setShowScroll] = useState(false)
-    
-    useEffect(() => {
-        window.addEventListener('scroll', checkScrollTop)
-        return function cleanup() {
-            window.removeEventListener('scroll', checkScrollTop)
-        }
-    })
-    
-    const checkScrollTop = () => {
-        if(!showScroll && window.pageYOffset > 400) {
-            setShowScroll(true)
-        } else if (showScroll && window.pageYOffset <= 400) {
-            setShowScroll(false)
-        }
-    }
+  const [showScroll, setShowScroll] = useState(false)
 
-    const scrollTop = () => {
-        window.scrollTo({top: 0, behavior: 'smooth'})
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop)
+    return function cleanup() {
+      window.removeEventListener("scroll", checkScrollTop)
     }
+  })
 
-    return (
-        <button className="scrollTop" onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}}>
-            go to top
-        </button>
-    )
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true)
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false)
+    }
+  }
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  return (
+    <button
+      className="scrollTop"
+      onClick={scrollTop}
+      style={{ display: showScroll ? "flex" : "none" }}
+    >
+      Back to Top
+    </button>
+  )
 }
 
 export default ScrollTopArrow
